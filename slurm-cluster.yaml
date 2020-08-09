@@ -26,6 +26,7 @@ resources:
     cluster_name            : g1
 
     zone                    : us-central1-b
+    # zone                    : europe-west1-a
 
   # Optional network configuration fields
   # READ slurm.jinja.schema for prerequisites
@@ -33,7 +34,7 @@ resources:
     # vpc_subnet                : default
     # shared_vpc_host_project   : < my-shared-vpc-project-name >
 
-    controller_machine_type : n1-standard-2
+    controller_machine_type : n1-standard-1
     # controller_disk_type      : pd-standard
     # controller_disk_size_gb   : 50
     # external_controller_ip    : False
@@ -50,7 +51,7 @@ resources:
     #   # Optional
     #   db_name: slurm_accounting
 
-    login_machine_type        : n1-standard-2
+    login_machine_type        : n1-standard-1
     # login_disk_type           : pd-standard
     # login_disk_size_gb        : 20
     # external_login_ips        : False
@@ -77,7 +78,7 @@ resources:
     #     local_mount: /shared
     #     fs_type: nfs
 
-    compute_image_machine_type  : n1-standard-2
+    compute_image_machine_type  : n1-standard-1
     # compute_image_disk_type   : pd-standard
     # compute_image_disk_size_gb: 20
     # compute_image_labels      :
@@ -101,11 +102,11 @@ resources:
     # suspend_time              : 300
 
     # slurm_version             : 19.05-latest
-    # ompi_version              : v3.1.x
+    ompi_version              : v3.1.x
 
     partitions :
       - name              : debug
-        machine_type      : n1-standard-2
+        machine_type      : n1-standard-1
         max_node_count    : 10
         zone              : us-central1-a
 
