@@ -1,5 +1,5 @@
 cluster_name = "g1"
-project      = "<project>"
+project      = "slurm-test-285914"
 zone         = "us-west1-b"
 
 # network_name            = "<existing network name>"
