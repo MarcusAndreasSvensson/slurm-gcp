@@ -56,6 +56,7 @@ PY_PACKAGES=(
         'pyyaml'
         'requests'
         'google-api-python-client'
+        'fenics'
     )
 
 PING_HOST=8.8.8.8
