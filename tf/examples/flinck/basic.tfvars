@@ -10,7 +10,7 @@ zone         = "us-west1-b"
 # disable_login_public_ips      = true
 # disable_compute_public_ips    = true
 
-# ompi_version  = null # e.g. v3.1.x
+ompi_version  = null # e.g. v3.1.x
 # slurm_version = "19.05-latest"
 # suspend_time  = 300
 

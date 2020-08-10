@@ -1,4 +1,4 @@
-cluster_name: <cluster_name>
+cluster_name: test_cluster
 
 project: slurm-184304
 region: us-west1
